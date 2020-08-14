@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.greg0109.dothatprefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>isController</key>
+			<string>1</string>
+			<key>label</key>
+			<string>Enable for Applications</string>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALSettingsKeyPrefix</key>
+			<string></string>
+			<key>ALSettingsDefaultValue</key>
+			<string>0</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.greg0109.dothatapplist</string>
+			<key>ALSingleEnabledMode</key>
+			<false/>
+		</dict>
+		<dict>
+	    <key>cell</key>
+	    <string>PSSliderCell</string>
+	    <key>default</key>
+	    <integer>10</integer> <!-- Default value of the slider -->
+	    <key>defaults</key>
+	    <string>com.greg0109.dothatprefs</string> <!-- entry path no extension -->
+	    <key>key</key>
+	    <string>timeinterval</string> <!-- Your key name here -->
+	    <key>max</key>
+	    <real>60</real> <!-- Enter your maximum value here -->
+	    <key>min</key>
+	    <real>0</real> <!-- Enter your minimum value here -->
+	    <key>showValue</key> <!-- Show the value of the slider. true or false. -->
+	     <true/>
+    </dict>
+	</array>
+	<key>title</key>
+	<string>DoThat</string>
+</dict>
+</plist>
